@@ -1,72 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Sami Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prOtgolio · warm analog</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    /* custom vintage glow (matches your #FF7F11) */
+    .glow-card {
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
+    }
+    .glow-card:hover {
+      box-shadow: 0 8px 20px -8px rgba(255, 127, 17, 0.4);
+      transform: translateY(-2px);
+    }
+    .vintage-border {
+      border: 1px solid rgba(172, 191, 164, 0.2);
+    }
+    .orangesage-gradient {
+      background: linear-gradient(145deg, #262626 0%, #2f2a24 100%);
+    }
+  </style>
 </head>
-<body>
+<body class="bg-[#262626] text-[#E2E8CE] font-sans antialiased">
 
-<header>
-    <h1>Sami</h1>
-    <p>Web Developer | Django | Frontend</p>
-</header>
+  <div class="relative z-10 max-w-6xl mx-auto px-5 md:px-8 lg:px-12 py-6 md:py-10">
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
+    <!-- ===== HEADER ===== with your palette #FF7F11 / #ACBFA4 / #262626 -->
+    <header class="flex flex-wrap justify-between items-center py-5 border-b border-[#ACBFA4]/20">
+      <div class="text-3xl font-extrabold tracking-tight">
+        <span class="text-[#FF7F11] drop-shadow-sm">prOtgolio</span>
+        <span class="text-sm align-top text-[#ACBFA4]/60 ml-1 font-mono">·dev</span>
+      </div>
+      <nav class="flex gap-7 text-sm font-medium text-[#E2E8CE]/80">
+        <a href="#" class="hover:text-[#FF7F11] transition">work</a>
+        <a href="#" class="hover:text-[#FF7F11] transition">studio</a>
+        <a href="#" class="hover:text-[#FF7F11] transition">contact</a>
+        <a href="#" class="bg-[#FF7F11]/20 border border-[#FF7F11]/30 px-4 py-2 rounded-full text-xs tracking-wide hover:bg-[#FF7F11]/30 transition text-[#E2E8CE]">resume</a>
+      </nav>
+    </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a Computer Science student and web developer.
-        I build modern websites using HTML, CSS, JavaScript and Django.
-    </p>
-</section>
+    <!-- ===== HERO with YOUR PIC placeholder and vintage feel ===== -->
+    <section class="grid md:grid-cols-2 gap-12 py-16 md:py-20 items-center">
+      <div>
+        <!-- warm tagline -->
+        <div class="inline-block px-3 py-1 rounded-full bg-[#ACBFA4]/10 border border-[#ACBFA4]/30 text-xs uppercase tracking-wider text-[#ACBFA4] mb-6">✦ analog · digital craft</div>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-[#E2E8CE]">
+          build <span class="text-[#FF7F11]">warm</span><br>
+          digital tools<br>
+          <span class="text-[#ACBFA4]">with soul.</span>
+        </h1>
+        <p class="text-[#E2E8CE]/70 text-lg max-w-md mt-6 leading-relaxed">
+          Front‑end alchemist — turning concepts into fluid interfaces. 
+          <span class="block mt-2 text-[#ACBFA4] text-sm">currently open for collaborations →</span>
+        </p>
+        <div class="flex gap-4 mt-8">
+          <a href="#" class="bg-[#FF7F11] hover:bg-[#e56d0a] text-[#262626] font-medium px-6 py-3 rounded-full text-sm inline-flex items-center gap-2 transition shadow-lg shadow-[#FF7F11]/20"><i class="fa-regular fa-paper-plane"></i> start a project</a>
+          <a href="#" class="bg-transparent border border-[#ACBFA4] hover:border-[#FF7F11] text-[#E2E8CE] px-6 py-3 rounded-full text-sm inline-flex items-center gap-2 transition"><i class="fa-regular fa-eye"></i> showcase</a>
+        </div>
+      </div>
+      <!-- YOUR PIC placeholder with vintage filter (you can replace src) -->
+      <div class="relative flex justify-center md:justify-end">
+        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#ACBFA4]/30 shadow-2xl shadow-[#FF7F11]/10 orangesage-gradient flex items-center justify-center">
+          <!-- REPLACE SRC with your actual image -->
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="your pic" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition mix-blend-luminosity">
+        </div>
+        <!-- vintage badge -->
+        <div class="absolute -bottom-6 -left-6 bg-[#262626] p-4 rounded-2xl border border-[#ACBFA4]/30 shadow-xl backdrop-blur-sm">
+          <div class="flex gap-3 items-center">
+            <div class="w-2 h-2 bg-[#FF7F11] rounded-full animate-pulse"></div>
+            <span class="text-sm text-[#E2E8CE]">8+ projects · warm stack</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML / CSS</li>
-        <li>JavaScript</li>
-        <li>Django</li>
-        <li>Python</li>
-        <li>Git & GitHub</li>
-    </ul>
-</section>
+    <!-- ===== SELECTED WORK — updated with your project names & palette ===== -->
+    <section class="py-16">
+      <div class="flex justify-between items-end mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-[#E2E8CE]">selected <span class="text-[#FF7F11]">works</span></h2>
+        <a href="#" class="text-sm text-[#ACBFA4] hover:text-[#FF7F11] flex items-center gap-1 transition">view all <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
+        <!-- project 1: REPLACE with your real project name -->
+        <div class="group bg-[#1f1f1f] p-5 rounded-3xl border border-[#ACBFA4]/20 glow-card flex flex-col">
+          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-[#FF7F11]/20 to-[#ACBFA4]/20 mb-5 flex items-center justify-center border border-[#ACBFA4]/30 text-5xl text-[#FF7F11] group-hover:scale-[1.02] transition duration-300">◈</div>
+          <h3 class="text-xl font-semibold text-[#E2E8CE]">NOVA bank</h3>
+          <p class="text-[#ACBFA4] text-sm mt-1 leading-relaxed flex-1">minimal neobank interface · animated charts</p>
+          <div class="flex flex-wrap gap-2 mt-4 text-xs text-[#FF7F11]">
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">React</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">Tailwind</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">framer</span>
+          </div>
+        </div>
+        <!-- project 2: replace with "ARTIFEX studio" or your real project -->
+        <div class="group bg-[#1f1f1f] p-5 rounded-3xl border border-[#ACBFA4]/20 glow-card flex flex-col">
+          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-[#FF7F11]/20 to-[#ACBFA4]/20 mb-5 flex items-center justify-center border border-[#ACBFA4]/30 text-5xl text-[#FF7F11] group-hover:scale-[1.02] transition duration-300">✦</div>
+          <h3 class="text-xl font-semibold text-[#E2E8CE]">ARTIFEX studio</h3>
+          <p class="text-[#ACBFA4] text-sm mt-1 leading-relaxed flex-1">3D configurator · WebGL showroom</p>
+          <div class="flex flex-wrap gap-2 mt-4 text-xs text-[#FF7F11]">
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">three.js</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">gsap</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">vue</span>
+          </div>
+        </div>
+        <!-- project 3: replace with "SOLAR pulse" or your real project -->
+        <div class="group bg-[#1f1f1f] p-5 rounded-3xl border border-[#ACBFA4]/20 glow-card flex flex-col md:col-span-2 lg:col-span-1">
+          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-[#FF7F11]/20 to-[#ACBFA4]/20 mb-5 flex items-center justify-center border border-[#ACBFA4]/30 text-5xl text-[#FF7F11] group-hover:scale-[1.02] transition duration-300">◉</div>
+          <h3 class="text-xl font-semibold text-[#E2E8CE]">SOLAR pulse</h3>
+          <p class="text-[#ACBFA4] text-sm mt-1 leading-relaxed flex-1">energy dashboard · real‑time data</p>
+          <div class="flex flex-wrap gap-2 mt-4 text-xs text-[#FF7F11]">
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">D3</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">Next.js</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">socket.io</span>
+          </div>
+        </div>
+        <!-- ADD YOUR OWN PROJECT CARD HERE — copy and paste, update title/desc/tags -->
+        <div class="group bg-[#1f1f1f] p-5 rounded-3xl border border-[#ACBFA4]/20 glow-card flex flex-col">
+          <div class="aspect-video w-full rounded-xl bg-gradient-to-br from-[#FF7F11]/20 to-[#ACBFA4]/20 mb-5 flex items-center justify-center border border-[#ACBFA4]/30 text-5xl text-[#FF7F11] group-hover:scale-[1.02] transition duration-300">⦿</div>
+          <h3 class="text-xl font-semibold text-[#E2E8CE]">YOUR PROJECT</h3>
+          <p class="text-[#ACBFA4] text-sm mt-1 leading-relaxed flex-1">add your own description here · vintage warm</p>
+          <div class="flex flex-wrap gap-2 mt-4 text-xs text-[#FF7F11]">
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">React</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">Tailwind</span>
+            <span class="bg-[#FF7F11]/10 px-2 py-1 rounded-full border border-[#FF7F11]/20">vite</span>
+          </div>
+        </div>
+        <!-- end custom block -->
+      </div>
+      <div class="text-center mt-10 text-[#ACBFA4] text-sm italic border-t border-[#ACBFA4]/20 pt-8">
+        <i class="fa-regular fa-pen-to-square mr-2"></i> you can replace these with your actual projects — they're just placeholders
+      </div>
+    </section>
 
-<section id="projects">
-    <h2>Projects</h2>
+    <!-- ===== EXPERTISE + mini about with warm tones ===== -->
+    <section class="grid md:grid-cols-3 gap-8 py-14 border-y border-[#ACBFA4]/20">
+      <div class="md:col-span-1">
+        <h2 class="text-2xl font-semibold flex items-center gap-2"><i class="fa-regular fa-compass text-[#FF7F11]"></i> <span class="text-[#E2E8CE]">focus</span></h2>
+        <p class="text-[#ACBFA4] mt-3 text-sm leading-relaxed">interaction design, design systems, and turning complex needs into buttery UIs — with a vintage feel.</p>
+      </div>
+      <div class="md:col-span-2 grid grid-cols-2 md:grid-cols-4 gap-5">
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">⚡</div><div class="font-medium text-sm text-[#E2E8CE]">react/vue</div><div class="text-[#ACBFA4] text-xs">5+ yrs</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">🧩</div><div class="font-medium text-sm text-[#E2E8CE]">tailwind</div><div class="text-[#ACBFA4] text-xs">design tokens</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">🌀</div><div class="font-medium text-sm text-[#E2E8CE]">gsap/framer</div><div class="text-[#ACBFA4] text-xs">micro‑interactions</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">📊</div><div class="font-medium text-sm text-[#E2E8CE]">data viz</div><div class="text-[#ACBFA4] text-xs">D3 · charts</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">🛠️</div><div class="font-medium text-sm text-[#E2E8CE]">storybook</div><div class="text-[#ACBFA4] text-xs">UI libraries</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">📱</div><div class="font-medium text-sm text-[#E2E8CE]">responsive</div><div class="text-[#ACBFA4] text-xs">pixel perfect</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">⚙️</div><div class="font-medium text-sm text-[#E2E8CE]">web perf</div><div class="text-[#ACBFA4] text-xs">lighthouse 100</div></div>
+        <div><div class="text-3xl mb-1 text-[#FF7F11]">🧪</div><div class="font-medium text-sm text-[#E2E8CE]">playwright</div><div class="text-[#ACBFA4] text-xs">e2e</div></div>
+      </div>
+    </section>
 
-    <div class="card">
-        <h3>Art Gallery Website</h3>
-        <p>Responsive gallery site with admin features.</p>
+    <!-- ===== LATEST WRITING (vintage notes) ===== -->
+    <section class="py-16">
+      <div class="flex items-center gap-2 mb-8">
+        <i class="fa-regular fa-pen-to-square text-[#FF7F11]"></i>
+        <h2 class="text-2xl font-semibold text-[#E2E8CE]">notes & essays</h2>
+        <span class="text-xs bg-[#FF7F11]/20 text-[#FF7F11] px-2 py-0.5 rounded-full border border-[#FF7F11]/30">3 new</span>
+      </div>
+      <div class="grid md:grid-cols-3 gap-5">
+        <a href="#" class="block p-5 bg-[#1f1f1f] rounded-2xl border border-[#ACBFA4]/20 hover:border-[#FF7F11]/40 transition glow-card">
+          <div class="text-[#FF7F11] text-sm mb-2">← design systems</div>
+          <h3 class="font-semibold text-lg text-[#E2E8CE]">bridging design & code</h3>
+          <p class="text-[#ACBFA4] text-sm mt-2">how to keep sanity with tailwind + design tokens.</p>
+          <span class="inline-block mt-4 text-xs text-[#ACBFA4]/60">12 min read</span>
+        </a>
+        <a href="#" class="block p-5 bg-[#1f1f1f] rounded-2xl border border-[#ACBFA4]/20 hover:border-[#FF7F11]/40 transition glow-card">
+          <div class="text-[#FF7F11] text-sm mb-2">← interaction</div>
+          <h3 class="font-semibold text-lg text-[#E2E8CE]">micro‑motion philosophy</h3>
+          <p class="text-[#ACBFA4] text-sm mt-2">why 200ms feels instant (and 500ms kills flow).</p>
+          <span class="inline-block mt-4 text-xs text-[#ACBFA4]/60">7 min read</span>
+        </a>
+        <a href="#" class="block p-5 bg-[#1f1f1f] rounded-2xl border border-[#ACBFA4]/20 hover:border-[#FF7F11]/40 transition glow-card">
+          <div class="text-[#FF7F11] text-sm mb-2">← productivity</div>
+          <h3 class="font-semibold text-lg text-[#E2E8CE]">dev environment 2026</h3>
+          <p class="text-[#ACBFA4] text-sm mt-2">vscode, AI copilot, and the perfect terminal.</p>
+          <span class="inline-block mt-4 text-xs text-[#ACBFA4]/60">5 min read</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER / CONNECT with your colors ===== -->
+    <footer class="border-t border-[#ACBFA4]/20 pt-14 pb-10 flex flex-wrap justify-between items-start gap-8">
+      <div>
+        <div class="text-3xl font-extrabold tracking-tight mb-2"><span class="text-[#FF7F11]">prOtgolio</span></div>
+        <p class="text-[#ACBFA4] text-sm max-w-xs">design → front‑end → impact.<br>© 2026 — based in eu / remote · warm vintage</p>
+      </div>
+      <div class="flex flex-wrap gap-12">
+        <div>
+          <h4 class="text-xs uppercase tracking-wider text-[#ACBFA4] mb-4">social</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-[#FF7F11] flex items-center gap-2"><i class="fa-brands fa-github"></i> github</a></li>
+            <li><a href="#" class="hover:text-[#FF7F11] flex items-center gap-2"><i class="fa-brands fa-linkedin-in"></i> linkedin</a></li>
+            <li><a href="#" class="hover:text-[#FF7F11] flex items-center gap-2"><i class="fa-brands fa-x-twitter"></i> x / posts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs uppercase tracking-wider text-[#ACBFA4] mb-4">contact</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#" class="hover:text-[#FF7F11] flex items-center gap-2"><i class="fa-regular fa-envelope"></i> hi@prOtgolio.dev</a></li>
+            <li><a href="#" class="hover:text-[#FF7F11] flex items-center gap-2"><i class="fa-regular fa-calendar"></i> book a call</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- tiny signature with your palette -->
+    <div class="text-[#ACBFA4]/50 text-xs text-center py-6 border-t border-[#ACBFA4]/20 mt-8">
+      built with <i class="fa-regular fa-heart text-[#FF7F11]"></i> using #FF7F11 · #ACBFA4 · #E2E8CE · #262626
     </div>
-
-    <div class="card">
-        <h3>Hotel Management System</h3>
-        <p>Web-based management system project.</p>
-    </div>
-
-    <div class="card">
-        <h3>Freelance Platform</h3>
-        <p>AI-driven freelance marketplace (Final Year Project).</p>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourmail@example.com</p>
-    <p>LinkedIn: your link</p>
-</section>
-
-<footer>
-    <p>© 2026 Sami Portfolio</p>
-</footer>
-
+  </div>
 </body>
 </html>
