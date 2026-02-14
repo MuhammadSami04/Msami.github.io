@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Sami · resume</title>
+  <!-- Tailwind via CDN + basic print styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome icons (free) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* subtle print enhancement */
+    @media print {
+      body { background: white; color: black; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .no-print { display: none; }
+      .print-shadow { box-shadow: none !important; border: 1px solid #ddd; }
+      a { text-decoration: none; color: black; }
+    }
+    /* custom bullet for lists */
+    .bullet-sq { list-style-type: square; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans antialiased p-4 md:p-6 print:p-0">
+
+  <!-- main resume card (letter/A4 friendly max-w-4xl) -->
+  <div class="max-w-4xl mx-auto bg-white shadow-xl print:shadow-none rounded-2xl print:rounded-none overflow-hidden border border-gray-200 print:border-0">
+
+    <!-- HEADER: name + title + contact (dark slate) -->
+    <div class="bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8 py-6 print:py-4 print:bg-black">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <h1 class="text-4xl font-bold tracking-tight">Muhammad Sami</h1>
+          <p class="text-lg text-gray-300 mt-1">BS Computer Science · AI & web developer</p>
+        </div>
+        <div class="text-sm text-gray-300 space-y-1 print:text-black print:bg-white print:p-2 print:rounded">
+          <div><i class="fa-regular fa-envelope w-5 inline-block"></i> samijee755@gmail.com</div>
+          <div><i class="fa-regular fa-phone w-5 inline-block"></i> +92 3251125316</div>
+          <div><i class="fa-regular fa-map-pin w-5 inline-block"></i> Jhang , Pakistan</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TWO COLUMN LAYOUT (left sidebar ~33% / right main ~66%) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-0 print:grid-cols-3">
+      
+      <!-- LEFT SIDEBAR (darker background for contrast) -->
+      <div class="bg-gray-50 print:bg-gray-100 p-6 border-r border-gray-200 print:border-gray-300">
+        
+        <!-- EDUCATION -->
+        <section class="mb-7">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-graduation-cap mr-2 text-gray-600"></i>Education</h2>
+          <div class="space-y-4">
+            <div>
+              <h3 class="font-semibold text-gray-800">BS Computer Science (8th sem)</h3>
+              <p class="text-sm text-gray-600">The Islamia University of Bahawalpur</p>
+              <p class="text-xs text-gray-500 mt-1">CGPA 3.42/4.00 · continue</p>
+              <p class="text-xs text-gray-500 mt-1">Relevant: Web Dev, DB, ML, DSA, OS, Networks</p>
+            </div>
+            <div>
+              <h3 class="font-semibold text-gray-800">F.Sc. (Pre-Engineering)</h3>
+              <p class="text-sm text-gray-600">Marks: 1010 / 1100</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- TECHNICAL SKILLS (condensed from pdf) -->
+        <section class="mb-7">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-code mr-2 text-gray-600"></i>Skills</h2>
+          <div class="space-y-3">
+            <div>
+              <span class="text-xs font-semibold bg-gray-200 px-2 py-0.5 rounded">Programming</span>
+              <p class="text-sm mt-1">Python (Adv), C/C++ (intermediate), JS (intermediate)</p>
+            </div>
+            <div>
+              <span class="text-xs font-semibold bg-gray-200 px-2 py-0.5 rounded">Web dev</span>
+              <p class="text-sm mt-1">HTML5, CSS3, Django, Node.js (basic)</p>
+            </div>
+            <div>
+              <span class="text-xs font-semibold bg-gray-200 px-2 py-0.5 rounded">Databases</span>
+              <p class="text-sm mt-1">SQL, MySQL</p>
+            </div>
+            <div>
+              <span class="text-xs font-semibold bg-gray-200 px-2 py-0.5 rounded">Data / ML</span>
+              <p class="text-sm mt-1">Pandas, NumPy, Matplotlib, scikit-learn, preprocessing, model training, chatbot dev</p>
+            </div>
+            <div>
+              <span class="text-xs font-semibold bg-gray-200 px-2 py-0.5 rounded">Tools & concepts</span>
+              <p class="text-sm mt-1">VS Code, Git/GitHub, Google Colab, OOP, DSA, parallel & distributed (learning), OS & networking basics, cybersecurity (beginner)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- LANGUAGES (as in pdf) -->
+        <section class="mb-7">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-language mr-2 text-gray-600"></i>Languages</h2>
+          <ul class="text-sm space-y-1 bullet-sq pl-5">
+            <li>Python – Advanced</li>
+            <li>C – Intermediate</li>
+            <li>C++ – Intermediate</li>
+            <li>JavaScript – Intermediate</li>
+            <li>HTML5 – Advanced</li>
+            <li>CSS3 – Intermediate</li>
+            <li>SQL – Intermediate</li>
+          </ul>
+        </section>
+
+        <!-- GENERAL SKILLS -->
+        <section class="mb-7">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-regular fa-file-lines mr-2 text-gray-600"></i>General skills</h2>
+          <p class="text-sm">MS Office (Word, Excel, PPT), Report writing, Research & academic writing</p>
+        </section>
+
+        <!-- CERTIFICATIONS (abbreviated) -->
+        <section class="mb-2">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-certificate mr-2 text-gray-600"></i>Certifications</h2>
+          <ul class="text-xs space-y-2 bullet-sq pl-5">
+            <li>EDA in Python – DataCamp</li>
+            <li>Writing Efficient Python – DataCamp</li>
+            <li>Machine Learning – DataCamp</li>
+            <li>Volunteer Certificate – CS Club (2024)</li>
+            <li>Orientation Host – IUB (2024)</li>
+            <li>Gold Medal – Essay Writing</li>
+            <li>Silver Medal – Quiz Competition</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- RIGHT MAIN CONTENT -->
+      <div class="md:col-span-2 p-6 print:p-4">
+        
+        <!-- PROFESSIONAL SUMMARY -->
+        <section class="mb-6">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-regular fa-user mr-2 text-gray-600"></i>Summary</h2>
+          <p class="text-sm leading-relaxed">BS Computer Science student with hands‑on experience in Python, Django, and basic Machine Learning, focused on building AI‑powered web applications and data‑driven solutions. Passionate about integrating ML features into web platforms and creating intelligent chatbots.</p>
+        </section>
+
+        <!-- EXPERIENCE (teaching + ml) -->
+        <section class="mb-6">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-briefcase mr-2 text-gray-600"></i>Experience</h2>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h3 class="font-semibold text-gray-800">Teaching Assistant (Python, C)</h3>
+                <span class="text-xs text-gray-500">3.5 months</span>
+              </div>
+              <p class="text-sm text-gray-600">Conducted classes on Python, C, operators, and control structures. Helped students with fundamental programming concepts.</p>
+            </div>
+            <div>
+              <div class="flex justify-between items-baseline">
+                <h3 class="font-semibold text-gray-800">Machine Learning Enthusiast</h3>
+                <span class="text-xs text-gray-500">ongoing</span>
+              </div>
+              <p class="text-sm text-gray-600">Hands‑on experience with scikit‑learn, dataset preprocessing, AI chatbot development, and integrating ML features into Django‑based web apps.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS (from pdf, organized) -->
+        <section class="mb-6">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-solid fa-diagram-project mr-2 text-gray-600"></i>Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Freelance Platform (FYP)</h3>
+              <p class="text-xs text-gray-600 mt-1">Django, employer/freelancer roles, gigs, job posting, chat, admin panel. (in progress)</p>
+            </div>
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Personalized Chatbot</h3>
+              <p class="text-xs text-gray-600 mt-1">AI chatbot development, integration into web apps (in progress).</p>
+            </div>
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Portfolio Website</h3>
+              <p class="text-xs text-gray-600 mt-1">Django with animations, sidebar navigation, dark theme.</p>
+            </div>
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Hotel Management System</h3>
+              <p class="text-xs text-gray-600 mt-1">Web framework‑based system (Django).</p>
+            </div>
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Art Gallery Website</h3>
+              <p class="text-xs text-gray-600 mt-1">Modern web gallery for art exhibitions.</p>
+            </div>
+            <div class="border border-gray-200 p-3 rounded-lg">
+              <h3 class="font-semibold text-gray-800">Vibe coding projects</h3>
+              <p class="text-xs text-gray-600 mt-1">gencare (voice clone), marwaith pro (inheritance distributor).</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- ADDITIONAL: relevant coursework & achievements -->
+        <section class="mb-6">
+          <h2 class="text-sm uppercase tracking-wider font-bold text-gray-500 border-b border-gray-300 pb-1 mb-3"><i class="fa-regular fa-star mr-2 text-gray-600"></i>Highlights</h2>
+          <ul class="text-sm list-disc pl-6 space-y-1">
+            <li><span class="font-medium">Gold Medal</span> – Essay Writing Competition</li>
+            <li><span class="font-medium">Silver Medal</span> – Quiz Competition</li>
+            <li>Volunteer & Orientation Host – CS Club, IUB (2024)</li>
+            <li>Coursework: Machine Learning, Parallel & Distributed Computing (learning), OOP, DSA, Networks, OS</li>
+          </ul>
+        </section>
+
+        <!-- line for extra contact / github -->
+        <div class="text-xs text-gray-400 border-t border-gray-200 pt-4 mt-4 flex flex-wrap gap-4">
+          <span><i class="fa-brands fa-github mr-1"></i> muhammadsami04.github.io</span>
+          <span><i class="fa-brands fa-linkedin mr-1"></i> linkedin.com/in/muhammad-sami</span>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- tiny footer note (no-print) -->
+   
+  </div>
+</body>
+</html>
